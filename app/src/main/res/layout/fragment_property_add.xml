@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PropertyAddViewActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List New Property"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:padding="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyTitleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Property Title"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Spinner
+            android:id="@+id/propertyTypeInfo"
+            android:layout_marginLeft="7dp"
+            android:layout_width="195dp"
+            android:layout_height="65dp">
+
+        </Spinner>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyYearInfo"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:hint="Property Built Year" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyAreaInfo"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:hint="Property Area" />
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyTotalBedrooms"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:hint="Total Bedrooms" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyTotalBathrooms"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:hint="Total Bathrooms" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyPriceInfo"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:hint="Price" />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/propertyPriceMonthlyOrAnnuallyInfo"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:hint="PriceMonthlyOrAnnually" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/propertyAddressInfo"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Address and Location" />
+
+            <Button
+                android:id="@+id/getCurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:text="Current Location">
+
+            </Button>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyTotalRoommates"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Total Roommates" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyPasscodeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Passcode"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyDescriptionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Description" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Facilities"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <CheckBox
+            android:id="@+id/facilityParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking"/>
+
+        <CheckBox
+            android:id="@+id/facilitySecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"/>
+
+        <CheckBox
+            android:id="@+id/facilityWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi"/>
+        <CheckBox
+            android:id="@+id/facilityGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gas"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <CheckBox
+            android:id="@+id/facilityKitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitchen"/>
+        <CheckBox
+            android:id="@+id/facilityAirConditioner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AirConditioner"/>
+        <CheckBox
+            android:id="@+id/facilityPetFriendly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet-Friendly"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+        <CheckBox
+            android:id="@+id/facilityElectricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity"/>
+        <CheckBox
+            android:id="@+id/facilitySelfCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self Check In" />
+
+        <CheckBox
+            android:id="@+id/facilityHeating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heating"/>
+        <CheckBox
+            android:id="@+id/facilityElevator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elevator"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyAdditionalFacility"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:hint="Additional Facilities" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addAdditionalFacility"
+        android:onClick="sendMessage"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/propertyProfileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerInside"
+        android:cropToPadding="true"
+        android:background="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/propertyImageCaptureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:src = "@drawable/ic_camera"/>
+
+    <ImageButton
+        android:id="@+id/propertyImageUploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:src = "@drawable/ic_image_upload"/>
+    <Button
+        android:id="@+id/submitPropertyDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="SUBMIT">
+
+    </Button>
+
+
+</LinearLayout>
+</ScrollView>

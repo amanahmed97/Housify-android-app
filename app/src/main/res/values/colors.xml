@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name = "Home">#1194AA</color>
+    <color name = "Like">#C93790</color>
+    <color name="Chat">#AE7E0F</color>
+    <color name="Profile">#A61111</color>
+
+    <color name = "home_20">#D005D3F6</color>
+    <color name = "like_20">#33C93790</color>
+    <color name = "chat_20">#33AE7E0F</color>
+    <color name = "profile_20">#331AE403</color>
+
+    <color name = "home_50">#000000</color>
+    <color name = "like_50">#000000</color>
+    <color name = "chat_50">#000000</color>
+    <color name = "profile_50">#000000</color>
+</resources>
